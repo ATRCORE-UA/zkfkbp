@@ -26,11 +26,14 @@
             <li><a href="#about">About Us</a></li>
         </ul>
     </nav>
-    <div class="search-icon">
-        <svg viewBox="0 0 24 24" width="24" height="24" stroke="white" stroke-width="2" fill="none">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-        </svg>
+    <div class="search-container">
+        <input type="text" class="search-input" placeholder="Search...">
+        <div class="search-icon" id="searchBtn">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="white" stroke-width="2" fill="none">
+                <circle cx="11" cy="11" r="8"></circle>
+                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+        </div>
     </div>
 </header>
 
@@ -124,6 +127,25 @@
         <p>© 2026 W. All rights reserved.</p>
     </div>
 </footer>
+<script>
+    const searchBtn = document.getElementById('searchBtn');
+    const searchInput = document.querySelector('.search-input');
 
+    searchBtn.addEventListener('click', () => {
+        searchInput.classList.toggle('active');
+
+        // Якщо поле відкрилося, одразу ставимо в нього курсор
+        if (searchInput.classList.contains('active')) {
+            searchInput.focus();
+        }
+    });
+
+    // Закривати поле, якщо клікнули поза ним
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.search-container') && searchInput.classList.contains('active')) {
+            searchInput.classList.remove('active');
+        }
+    });
+</script>
 </body>
 </html>
