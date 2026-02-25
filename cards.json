@@ -1,0 +1,29 @@
+[
+  {
+    "id": "c1",
+    "category": "news",
+    "image": "images/1.jpg",
+    "title": "Heading One",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis elit venenatis tempus porta risus. Eu tristique vitae fames a. Bibendum duis in facilisis auctor senectus nisl vel. ",
+    "buttonText": "Для 1 людини",
+    "link": "#m365"
+  },
+  {
+    "id": "c2",
+    "category": "news",
+    "image": "images/2.jpg",
+    "title": "Heading Two",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis elit venenatis tempus porta risus. Eu tristique vitae fames a. Bibendum duis in facilisis auctor senectus nisl vel. ",
+    "buttonText": "Завантажити Teams",
+    "link": "#teams"
+  },
+  {
+    "id": "c3",
+    "category": "news",
+    "image": "images/3.jpg",
+    "title": "Heading Three",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Venenatis elit venenatis tempus porta risus. Eu tristique vitae fames a. Bibendum duis in facilisis auctor senectus nisl vel. ",
+    "buttonText": "Спробувати",
+    "link": "#edge"
+  }
+]
