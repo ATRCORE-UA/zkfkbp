@@ -572,3 +572,58 @@ body, html {
 html {
     scroll-behavior: smooth;
 }
+
+.framed-image {
+    width: 100%;
+    height: auto;
+
+    /* 1. The actual border/frame */
+    border: 5px solid #353535;
+
+    /* 2. Optional: Add padding to create space between the image and the frame */
+    padding: 10px;
+
+    /* 3. Optional: Background color that shows through the padding space */
+    background-color: #1f1f1f;
+
+    /* 4. Keeps the frame inside the total width */
+    box-sizing: border-box;
+
+    /* Optional: Round the corners */
+    border-radius: 8px;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    width: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: #fff;
+    color: white;
+    font-size: 16px;
+    border-radius: 20px;
+    transition: width 0.4s ease;
+    opacity: 0;
+}
+
+.search-input.active {
+    width: 200px; /* Довжина поля, коли воно відкрите */
+    padding: 8px 15px;
+    margin-right: 10px;
+    opacity: 1;
+    border: 1px solid #1f1f1f;
+}
+
+.search-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.search-icon:hover {
+    transform: scale(1.1);
+}
